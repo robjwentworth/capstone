@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Case Manager Auto Customer Identifier</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<style type="text/css">
+    body{
+        padding-top: 5px;
+    }
+</style>
+</head>
+<body>
+<nav role="navigation" class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        <a class="navbar-brand" href="#"><img src="https://s-media-cache-ak0.pinimg.com/236x/4a/61/78/4a6178cf1fb8dd7c8d3ee39db751c549.jpg" style="max-height:50px; margin-top:-15px"></a>
+        </div>
+        <!-- Collection of nav links and other content for toggling -->
+        <div id="navbarCollapse" class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="/">Home</a></li>
+                <li class="active"><a href="/readme">Read Me</a></li>
+                <!-- <li><a href="/predict">Predict</a></li> -->
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="http://www.galvanize.com">Galvanize</a></li>
+                <li><a href="http://www.libertymutual.com">Liberty Mutual</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div class="jumbotron">
+    <div class="container">
+        <h2>Read Me for Auto Claim Customer Complaint Web Application</h2>
+        <p>The Auto Claim Customer Complaint Web Application determines the probability that a specific customer has of having one or more complaints against the company. The application looks at six specific points of information: Gender, Income, Monthly Premium, Number of Months since their last claim, Generalized Location, and a Generalized size of their vehicle to make the determination.</p>
+        <p>The Application is motivated by asking a business specific question. In this case, the question I wanted to answer centered around insurance. I have had a career in the insurance field for the past 9 years and carry domain knowledge in that domain. I found the data set around Auto Claims at a customer level of detail and decided to answer a question in that domain. The number of complaints field intrigued me and seemed to be an ideal candidate for further study.</p>
+        <p>The Application is written in Python 2.7.12 and HTML Bootstrap. The interface is fairly simple. The user inputs the information, hits Submit and a probability is returned. The probability is returned by taking the information and running it up against a Gradient Boosting Classifier model that has been pickled to store on site. The site is hosted by Amazon EC2.</p>
+        <p>The code repository can be found on github <a href="https://github.com/robjwentworth/capstone">here:</a></p>
+    </div>
+</div>
+</body>
+</html>
