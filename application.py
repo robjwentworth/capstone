@@ -78,4 +78,5 @@ def predict():
     return flask.render_template('predict.html').format(pred)
 
 if __name__ == '__main__':
-    application.run(host='0.0.0.0', threaded=True, debug=True)
+    #application.run(host='0.0.0.0', threaded=True, debug=True)
+    application.run()
